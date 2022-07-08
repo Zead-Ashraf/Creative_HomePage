@@ -1,0 +1,72 @@
+/* Start Global Rules */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #0093e9;
+  background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Cairo", sans-serif;
+  flex-direction: column;
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 970px;
+  }
+}
+ul {
+  list-style: none;
+}
+/* End Global Rules */
+
+/* Start Main Box */
+main .container h1 {
+  text-align: center;
+  font-size: 6em;
+  color: #fff;
+  margin-bottom: 100px;
+}
+main .container ul {
+  display: flex;
+}
+
+main .container form input {
+  width: 100%;
+  padding: 10px;
+  font-size: 4em;
+  text-align: center;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  caret-color: #fff;
+  color: #fff;
+}
+main .container form input::placeholder {
+  color: #fff;
+}
+main .container form input:focus::placeholder {
+  color: transparent;
+}
+/* End Main Box */
